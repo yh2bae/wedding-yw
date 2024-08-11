@@ -32,11 +32,11 @@ export default function RootLayout({
         property="og:description"
         content="You have always been a big part of our lives. You are cordially invited!"
       />
-      <meta property="og:url" content="http://192.168.18.147:3000" />
-      {/* <meta
+      <meta property="og:url" content="https://yudha-wulan.vercel.app/" />
+      <meta
         property="og:image"
-        content="https://wedding.ptdede.com/images/og-image.jpg"
-      /> */}
+        content="https://yudha-wulan.vercel.app/images/cover.jpeg"
+      />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <body className={`${merriweather.className} bg-black overflow-x-hidden`}>

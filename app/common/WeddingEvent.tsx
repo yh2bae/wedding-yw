@@ -61,7 +61,7 @@ const WeddingEvent = () => {
               />
               <div className="flex">
                 <div className="w-[80%] bg-white px-4 py-6 rounded-bl-[1.25rem] flex flex-col gap-5 items-baseline">
-                  <h1 className="italic text-xl font-light">
+                  <h1 className="italic text-xl font-light text-gray-900">
                     Thursday, 12 September 2024
                   </h1>
                   <hr className="border border-[#5a5a5a80] w-full" />

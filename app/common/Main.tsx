@@ -14,7 +14,7 @@ import Footer from "./Footer";
 const Main = () => {
   const [isClose, setIsClose] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const [play] = useSound("/audio/song.mp3", {
+  const [play] = useSound("/audio/wedding-song.mp3", {
     volume: 0.25,
   });
 
@@ -65,7 +65,12 @@ const Main = () => {
           <div className="text-center">
             <div className="loader"></div>{" "}
             {/* Tambahkan animasi loader sesuai kebutuhan */}
-            <p>Ditunggu Sebentar ya 😁</p>
+            <p>
+              Memuat halaman, mohon tunggu sebentar...{" "}
+              <span role="img" aria-label="love">
+                ❤️
+              </span>
+            </p>
           </div>
         </div>
       )}

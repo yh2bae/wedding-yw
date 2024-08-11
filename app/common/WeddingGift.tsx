@@ -2,6 +2,7 @@ import { RevealWrapper } from "next-reveal";
 import AccountBank from "./partials/AccountBank";
 
 const WeddingGift = () => {
+  const url = window.location.href.split("/")[3];
   return (
     <section id="gift">
       <div className="bg-[url('/images/profile.jpg')] bg-cover bg-center relative px-8 pt-8 pb-12 lg:px-10 lg:pt-10 lg:pb-14">
@@ -35,11 +36,13 @@ const WeddingGift = () => {
                 number="901269753626"
                 name="Siti Wulandari"
               />
-              <AccountBank
-                bank="BCA"
-                number="7150535578"
-                name="Amien Propanawati"
-              />
+              {url !== "#" && (
+                <AccountBank
+                  bank="BCA"
+                  number="7150535578"
+                  name="Amien Propanawati"
+                />
+              )}
             </div>
           </RevealWrapper>
         </div>

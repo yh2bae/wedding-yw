@@ -11,15 +11,35 @@ const Cover: React.FC<CoverProps> = ({ onClick }) => {
   const [toName, setToName] = useState("");
 
   useEffect(() => {
-    // Dapatkan nilai dari URL params
-    const urlParams = new URLSearchParams(window.location.search);
-    const toParam = urlParams.get("to");
+    // Ambil URL saat ini
+    const currentUrl = window.location.href;
 
-    // Periksa jika nilai 'to' ada di URL params
-    if (toParam) {
-      // Ganti '%20' dengan spasi
-      const decodedToName = decodeURIComponent(toParam.replace(/\%20/g, " "));
-      setToName(decodedToName);
+    // Cek apakah URL mengandung hash
+    let queryString = "";
+    if (currentUrl.includes("#")) {
+      const hashIndex = currentUrl.indexOf("#");
+      const hashPart = currentUrl.slice(hashIndex + 1); // Bagian setelah #
+
+      // Cek apakah hash mengandung query params
+      if (hashPart.includes("?")) {
+        queryString = hashPart.split("?")[1]; // Ambil bagian setelah '?'
+      }
+    } else {
+      // Jika tidak ada hash, ambil query string langsung dari URL
+      queryString = window.location.search.slice(1); // Ambil bagian setelah '?'
+    }
+
+    // Jika ada query string, parse itu
+    if (queryString) {
+      const urlParams = new URLSearchParams(queryString);
+      const toParam = urlParams.get("to");
+
+      // Periksa jika nilai 'to' ada di URL params
+      if (toParam) {
+        // Ganti '%20' dengan spasi
+        const decodedToName = decodeURIComponent(toParam.replace(/\%20/g, " "));
+        setToName(decodedToName);
+      }
     }
   }, []);
 

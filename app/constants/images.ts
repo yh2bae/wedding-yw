@@ -1,6 +1,7 @@
 export const imageGallery = [
-  "/images/cover.jpeg",
-  "/images/countdown.jpeg",
+  "/images/slider/10.jpeg",
+  "/images/slider/11.jpeg",
+  "/images/slider/12.jpeg",
   "/images/slider/1.jpeg",
   "/images/slider/2.jpeg",
   "/images/slider/3.jpeg",

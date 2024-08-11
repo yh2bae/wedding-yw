@@ -32,10 +32,10 @@ export default function RootLayout({
         property="og:description"
         content="You have always been a big part of our lives. You are cordially invited!"
       />
-      <meta property="og:url" content="https://yudha-wulan.vercel.app/" />
+      <meta property="og:url" content="https://yudha-wulan.my.id/" />
       <meta
         property="og:image"
-        content="https://yudha-wulan.vercel.app/images/cover.jpeg"
+        content="https://yudha-wulan.my.id/images/cover.jpeg"
       />
       <meta property="og:type" content="website" />
       <meta property="og:image:width" content="1200" />
@@ -47,7 +47,7 @@ export default function RootLayout({
         name="twitter:description"
         content="ou have always been a big part of our lives. You are cordially invited!"
       />
-      <meta name="twitter:image" content="https://yudha-wulan.vercel.app/images/cover.jpeg" />
+      <meta name="twitter:image" content="https://yudha-wulan.my.id/images/cover.jpeg" />
       <body className={`${merriweather.className} bg-black overflow-x-hidden`}>
         {children}
       </body>

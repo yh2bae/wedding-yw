@@ -36,9 +36,9 @@ const WeddingGift = () => {
                 name="Siti Wulandari"
               />
               <AccountBank
-                bank="DANA"
-                number="089627671920"
-                name="Subroto Yudha Harsanto"
+                bank="BCA"
+                number="7150535578"
+                name="Amien Propanawati"
               />
             </div>
           </RevealWrapper>

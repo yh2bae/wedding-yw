@@ -13,22 +13,20 @@ import Footer from "./Footer";
 
 const Main = () => {
   const [isClose, setIsClose] = useState(false);
-  const [play, { stop }] = useSound("/audio/song.mp3", {
+  const [play] = useSound("/audio/song.mp3", {
     volume: 0.25,
   });
 
   useEffect(() => {
-    // Ini untuk menangani skenario di mana audio tidak diputar saat pengguna pertama kali berinteraksi
     const handleInteraction = () => {
-      play();
-      // Hapus event listener setelah audio mulai diputar untuk menghindari konflik
+      play(); // Coba putar audio di interaksi pertama
+      // Hapus event listener setelah interaksi pertama
       document.removeEventListener("click", handleInteraction);
     };
 
-    // Tambahkan event listener saat komponen pertama kali dirender
+    // Tambahkan event listener untuk klik pertama
     document.addEventListener("click", handleInteraction);
 
-    // Cleanup event listener ketika komponen di-unmount
     return () => {
       document.removeEventListener("click", handleInteraction);
     };

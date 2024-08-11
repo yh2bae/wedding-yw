@@ -35,11 +35,19 @@ export default function RootLayout({
       <meta property="og:url" content="https://yudha-wulan.vercel.app/" />
       <meta
         property="og:image"
-        content="/images/cover.jpeg"
+        content="https://yudha-wulan.vercel.app/images/cover.jpeg"
       />
-       <meta property="og:type" content="website" />
+      <meta property="og:type" content="website" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Yudha and Wulan Wedding" />
+      <meta
+        name="twitter:description"
+        content="ou have always been a big part of our lives. You are cordially invited!"
+      />
+      <meta name="twitter:image" content="https://yudha-wulan.vercel.app/images/cover.jpeg" />
       <body className={`${merriweather.className} bg-black overflow-x-hidden`}>
         {children}
       </body>

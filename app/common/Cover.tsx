@@ -1,7 +1,6 @@
 import { RevealWrapper } from "next-reveal";
 import React, { useEffect, useState } from "react";
 import { RxEnvelopeOpen } from "react-icons/rx";
-import Image from "next/image";
 
 interface CoverProps {
   onClick: () => void;
@@ -31,12 +30,17 @@ const Cover: React.FC<CoverProps> = ({ onClick }) => {
 
     // Jika ada query string, parse itu
     if (queryString) {
-      const urlParams = new URLSearchParams(queryString);
+      // URLSearchParams tidak menangani '&' sebagai bagian dari nilai parameter,
+      // jadi kita perlu mengganti '&' sementara dengan karakter yang tidak akan ada di URL
+      const safeQueryString = queryString
+        .replace(/\+/g, " ")
+        .replace(/&/g, "%26");
+      const urlParams = new URLSearchParams(safeQueryString);
       const toParam = urlParams.get("to");
 
       // Periksa jika nilai 'to' ada di URL params
       if (toParam) {
-        // Ganti '%20' dengan spasi
+        // Decode parameter 'to' yang mungkin mengandung karakter yang di-encode
         const decodedToName = decodeURIComponent(toParam.replace(/\%20/g, " "));
         setToName(decodedToName);
       }
@@ -57,8 +61,10 @@ const Cover: React.FC<CoverProps> = ({ onClick }) => {
               </p>
             </div>
             <div className="flex flex-col items-center gap-2">
+              {/* huruf pertama besar */}
               <p className="text-[0.8rem]">Kepada Yth.</p>
-              <br /> <h4 className="font-light text-4xl">{toName}</h4>
+              <br />{" "}
+              <h4 className="font-light text-4xl capitalize">{toName}</h4>
               <p className="text-[0.8rem]">
                 Tanpa Mengurangi Rasa Hormat, Kami Mengundang Anda Untuk
                 Berhadir Di Acara Pernikahan Kami.

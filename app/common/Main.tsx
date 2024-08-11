@@ -13,29 +13,22 @@ import Footer from "./Footer";
 
 const Main = () => {
   const [isClose, setIsClose] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [play] = useSound("/audio/song.mp3", {
     volume: 0.25,
   });
 
-  useEffect(() => {
-    const handleInteraction = () => {
-      play(); // Coba putar audio di interaksi pertama
-      // Hapus event listener setelah interaksi pertama
-      document.removeEventListener("click", handleInteraction);
-    };
-
-    // Tambahkan event listener untuk klik pertama
-    document.addEventListener("click", handleInteraction);
-
-    return () => {
-      document.removeEventListener("click", handleInteraction);
-    };
-  }, [play]);
-
   const closeModal = () => {
-    setIsClose(true);
-    play(); // Pastikan audio diputar ketika modal ditutup
+    setIsLoading(true); // Mulai proses loading
+
+    // Simulasi waktu untuk load semua komponen
+    setTimeout(() => {
+      setIsClose(true);
+      setIsLoading(false); // Hentikan loading setelah komponen siap
+      play(); // Hanya panggil audio saat modal ditutup
+    }, 2000); // Gantilah durasi ini sesuai kebutuhan (misalnya, waktu loading aktual)
   };
+
   return (
     <main className="max-w-[500px] mx-auto">
       <div
@@ -47,12 +40,13 @@ const Main = () => {
       >
         {!isClose && <Cover onClick={closeModal} />}
       </div>
+
       <div
         className={`transition-opacity duration-1000 ${
           isClose ? "opacity-100" : "opacity-0"
         }`}
       >
-        {isClose && (
+        {isClose && !isLoading && (
           <>
             <CountdownSection />
             <Ayat />
@@ -65,6 +59,16 @@ const Main = () => {
           </>
         )}
       </div>
+
+      {isLoading && (
+        <div className="fixed mx-auto inset-0 flex items-center justify-center bg-black/50 bg-opacity-75 z-50">
+          <div className="text-center">
+            <div className="loader"></div>{" "}
+            {/* Tambahkan animasi loader sesuai kebutuhan */}
+            <p>Ditunggu Sebentar ya 😁</p>
+          </div>
+        </div>
+      )}
     </main>
   );
 };

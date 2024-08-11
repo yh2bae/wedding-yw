@@ -63,14 +63,7 @@ const Main = () => {
       {isLoading && (
         <div className="fixed mx-auto inset-0 flex items-center justify-center bg-black/50 bg-opacity-75 z-50">
           <div className="text-center">
-            <div className="loader"></div>{" "}
-            {/* Tambahkan animasi loader sesuai kebutuhan */}
-            <p>
-              Memuat halaman, mohon tunggu sebentar...{" "}
-              <span role="img" aria-label="love">
-                ❤️
-              </span>
-            </p>
+            <span className="inline-block animate-spin">Y ❤️ W</span>
           </div>
         </div>
       )}

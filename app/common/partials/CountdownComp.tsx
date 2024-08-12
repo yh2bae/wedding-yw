@@ -13,7 +13,7 @@ const CountdownComp: React.FC = () => {
     );
   };
 
-  const weddingDate = new Date("2024-09-12T08:30:00");
+  const weddingDate = new Date("2024-09-11T19:30:00");
 
   return <Countdown date={weddingDate} renderer={renderer} />;
 }

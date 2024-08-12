@@ -61,7 +61,6 @@ const Cover: React.FC<CoverProps> = ({ onClick }) => {
               </p>
             </div>
             <div className="flex flex-col items-center gap-2">
-              {/* huruf pertama besar */}
               <p className="text-[0.8rem]">Kepada Yth.</p>
               <br />{" "}
               <h4 className="font-light text-4xl capitalize">{toName}</h4>

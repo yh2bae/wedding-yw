@@ -2,19 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getFirestore, addDoc, collection } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBHdNNYGnovPBChQkQ5S3N2SQRgwEY9qAQ",
-
-  authDomain: "yudha-757ac.firebaseapp.com",
-
-  projectId: "yudha-757ac",
-
-  storageBucket: "yudha-757ac.appspot.com",
-
-  messagingSenderId: "63532731830",
-
-  appId: "1:63532731830:web:a807dd4af05395b4d40517",
-
-  measurementId: "G-F6VR4M1SZP",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);

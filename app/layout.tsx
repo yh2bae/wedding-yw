@@ -47,7 +47,10 @@ export default function RootLayout({
         name="twitter:description"
         content="ou have always been a big part of our lives. You are cordially invited!"
       />
-      <meta name="twitter:image" content="https://yudha-wulan.my.id/images/cover.jpeg" />
+      <meta
+        name="twitter:image"
+        content="https://yudha-wulan.my.id/images/cover.jpeg"
+      />
       <body className={`${merriweather.className} bg-black overflow-x-hidden`}>
         {children}
       </body>

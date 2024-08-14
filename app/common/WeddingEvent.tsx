@@ -68,7 +68,7 @@ const WeddingEvent = () => {
                   <div>
                     <p className="flex items-center text-[#5a5a5a] font-light text-[0.8rem] gap-1.5">
                       <AiFillClockCircle />
-                      <span>08.00 WIB - Selesai</span>
+                      <span>10.00 WIB - Selesai</span>
                     </p>
                   </div>
                   <p className="text-[0.785rem] text-[#5a5a5a] font-light leading-[1.9]">

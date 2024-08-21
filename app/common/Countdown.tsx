@@ -1,11 +1,20 @@
 import { RevealWrapper } from "next-reveal";
 import React from "react";
 import CountdownComp from "./partials/CountdownComp";
+import Image from "next/image";
 
 export const CountdownSection = () => {
   return (
     <section>
-      <div className="min-h-screen bg-[url('/images/countdown.webp')] bg-cover bg-[44.5%] text-white relative py-28 flex items-end">
+      <div className="min-h-screen bg-cover bg-[44.5%] text-white relative py-28 flex items-end">
+        <Image
+          src="/images/countdown.webp"
+          alt="Background Image"
+          layout="fill"
+          objectFit="cover"
+          quality={75} // Adjust quality for performance
+          priority // Ensure it's loaded quickly
+        />
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative py-8 px-10 w-full">
           <div

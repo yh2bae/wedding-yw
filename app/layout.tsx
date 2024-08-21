@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Merriweather } from "next/font/google";
-import Head from "next/head";
 
 const merriweather = Merriweather({
   weight: ["300", "400", "700", "900"],
@@ -21,7 +20,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
         {/* SEO Meta Tags */}
         <meta
           name="description"
@@ -60,7 +58,6 @@ export default function RootLayout({
         {/* Preload the image */}
         <link rel="preload" as="image" href="/images/cover.webp" />
         <link rel="preload" as="image" href="/images/countdown.webp" />
-      </Head>
       <body className={`${merriweather.className} bg-black overflow-x-hidden`}>
         {children}
       </body>

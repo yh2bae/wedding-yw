@@ -6,7 +6,7 @@ import GalleryLightbox from "./partials/GalleryLightbox";
 const Gallery = () => {
   return (
     <section id="gallery">
-      <div className="bg-[url('/images/cover.jpeg')] bg-cover bg-center relative px-8 py-16">
+      <div className="bg-[url('/images/cover.webp')] bg-cover bg-center relative px-8 py-16">
         <div className="bg-transparent bg-[linear-gradient(360deg,#EAEAEA_53%,#06a1da_100%)] opacity-90 absolute inset-0"></div>
         <div className="z-10 relative">
           <h1 className="text-xl italic font-light text-center text-white">
@@ -14,7 +14,7 @@ const Gallery = () => {
           </h1>
           <div className="flex flex-col items-center text-center gap-4 my-10">
             <img
-              src="/images/slider/3.jpeg"
+              src="/images/slider/3.webp"
               alt="quote"
               className="w-[170px] h-[220px] object-cover rounded-xl"
             />

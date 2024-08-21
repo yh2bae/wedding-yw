@@ -6,7 +6,7 @@ import { HiArrowLongRight } from "react-icons/hi2";
 const Profile = () => {
   return (
     <section id="people">
-      <div className="bg-[url('/images/profile.jpg')] bg-center bg-no-repeat bg-cover px-12 py-16 text-gray-900">
+      <div className="bg-[url('/images/profile.webp')] bg-center bg-no-repeat bg-cover px-12 py-16 text-gray-900">
         <RevealWrapper duration={1500}>
           <p className="text-center text-[0.75rem] leading-loose text-gray-900">
             <strong>Bismillahirrahmanirrahim</strong>
@@ -21,7 +21,7 @@ const Profile = () => {
           <div></div>
           <RevealWrapper duration={1500} origin="right">
             <img
-              src="/images/wulan.jpg"
+              src="/images/wulan.webp"
               alt="Wulan"
               className="translate-x-[3rem] object-cover rounded-tl-[1.25rem] rounded-bl-[1.25rem] border-2 border-[#06a1da] border-r-0"
             />
@@ -60,7 +60,7 @@ const Profile = () => {
         <div className="grid grid-cols-2 mt-20">
           <RevealWrapper duration={1500} origin="left">
             <img
-              src="/images/yudha.jpg"
+              src="/images/yudha.webp"
               alt="Yudha"
               className="-translate-x-[3rem] object-cover rounded-tr-[1.25rem] rounded-br-[1.25rem] border-2 border-[#06a1da] border-l-0"
             />

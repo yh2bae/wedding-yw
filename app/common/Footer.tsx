@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <section id="footer">
-      <div className="h-screen bg-[url('/images/slider/6.jpg')]  bg-cover bg-[44.5%] text-white relative flex items-end">
+      <div className="h-screen bg-[url('/images/slider/6.webp')]  bg-cover bg-[44.5%] text-white relative flex items-end">
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative">
           <div className="bg-[linear-gradient(180deg,#FFFFFF00_0%,#06a1da_67%)] absolute inset-x-0 bottom-0 -top-60"></div>

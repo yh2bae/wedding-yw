@@ -5,7 +5,7 @@ import { AiFillClockCircle } from "react-icons/ai";
 const WeddingEvent = () => {
   return (
     <section id="wedding-events">
-      <div className="bg-[url('/images/profile.jpg')] bg-cover bg-center relative px-8 pt-8 pb-12 lg:px-10 lg:pt-10 lg:pb-14">
+      <div className="bg-[url('/images/profile.webp')] bg-cover bg-center relative px-8 pt-8 pb-12 lg:px-10 lg:pt-10 lg:pb-14">
         <div className="bg-transparent bg-[linear-gradient(360deg,#EAEAEA_53%,#06a1da_100%)] opacity-90 absolute inset-0"></div>
         <div className="z-10 relative">
           <h1 className="text-xl italic text-white text-center font-light">
@@ -14,7 +14,7 @@ const WeddingEvent = () => {
           <RevealWrapper duration={1500} origin="bottom">
             <div className="mt-10">
               <img
-                src="/images/slider/9.jpg"
+                src="/images/slider/9.webp"
                 alt="akad"
                 className="w-full h-72 object-cover object-top rounded-t-[1.25rem]"
               />
@@ -38,8 +38,8 @@ const WeddingEvent = () => {
                       Kediaman Mempelai Wanita
                     </strong>
                     <br />
-                    Air Rupik, Kec. Banding Agung, Kabupaten Ogan Komering
-                    Ulu Selatan, Sumatera Selatan
+                    Air Rupik, Kec. Banding Agung, Kabupaten Ogan Komering Ulu
+                    Selatan, Sumatera Selatan
                   </p>
                   <a
                     href="https://maps.app.goo.gl/p5T7EsaLiyVHTg2C7"
@@ -55,7 +55,7 @@ const WeddingEvent = () => {
           <RevealWrapper duration={1500} origin="bottom">
             <div className="mt-6">
               <img
-                src="/images/slider/7.jpg"
+                src="/images/slider/7.webp"
                 alt="akad"
                 className="w-full h-72 object-cover rounded-t-[1.25rem] object-left"
               />
@@ -76,8 +76,8 @@ const WeddingEvent = () => {
                       Kediaman Mempelai Wanita
                     </strong>
                     <br />
-                    Air Rupik, Kec. Banding Agung, Kabupaten Ogan Komering
-                    Ulu Selatan, Sumatera Selatan
+                    Air Rupik, Kec. Banding Agung, Kabupaten Ogan Komering Ulu
+                    Selatan, Sumatera Selatan
                   </p>
                   <a
                     href="https://maps.app.goo.gl/p5T7EsaLiyVHTg2C7"

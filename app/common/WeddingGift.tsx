@@ -5,7 +5,7 @@ const WeddingGift = () => {
   const url = window.location.href.split("/")[3];
   return (
     <section id="gift">
-      <div className="bg-[url('/images/profile.jpg')] bg-cover bg-center relative px-8 pt-8 pb-12 lg:px-10 lg:pt-10 lg:pb-14">
+      <div className="bg-[url('/images/profile.webp')] bg-cover bg-center relative px-8 pt-8 pb-12 lg:px-10 lg:pt-10 lg:pb-14">
         <div className="bg-transparent bg-[linear-gradient(360deg,#EAEAEA_53%,#06a1da_100%)] opacity-90 absolute inset-0"></div>
         <div className="space-y-8">
           <RevealWrapper duration={2500} origin="bottom" className="space-y-8">

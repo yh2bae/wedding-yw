@@ -74,11 +74,12 @@ const Cover: React.FC<CoverProps> = ({ onClick }) => {
               <p className="text-[0.8rem]">Kepada Yth.</p>
               <br />{" "}
               <h4 className="font-light text-4xl capitalize">{toName}</h4>
+              {/* <p className="text-[0.8rem]">
+                Tanpa Mengurangi Rasa Hormat, Kami Mengundang Bpk/Ibu/Sdr/i Untuk
+                Menghadiri Di Acara Pernikahan Kami.
+              </p> */}
               <p className="text-[0.8rem]">
-                Tanpa mengurangi rasa hormat, Kami mengundang Bpk/Ibu/Sdr/i pada acara pernikahan anak kami
-              </p>
-              <p className="text-[0.8rem]">
-                Mohon maaf apabila ada kesalahan penulisan nama/gelar
+                Mohon maaf apabila kami salah dalam penulisan nama dan gelar.
               </p>
               <RevealWrapper duration={4000} origin="bottom">
                 <button

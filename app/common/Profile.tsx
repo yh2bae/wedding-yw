@@ -13,7 +13,7 @@ const Profile = () => {
             <br />
             Assalamu'alaikum Warahmatullaahi Wabarakaatuh. Dengan memohon Rahmat
             dan Ridho Allah SWT. Kami mengharapkan kehadiran
-            Bapak/Ibu/Saudara/i. pada acara Resepsi Pernikahan putra-putri kami
+            Bapak/Ibu/Saudara/i. pada acara Resepsi Pernikahan anak kami
           </p>
         </RevealWrapper>
 

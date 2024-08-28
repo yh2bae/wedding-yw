@@ -75,8 +75,10 @@ const Cover: React.FC<CoverProps> = ({ onClick }) => {
               <br />{" "}
               <h4 className="font-light text-4xl capitalize">{toName}</h4>
               <p className="text-[0.8rem]">
-                Tanpa Mengurangi Rasa Hormat, Kami Mengundang Anda Untuk
-                Berhadir Di Acara Pernikahan Kami.
+                Tanpa mengurangi rasa hormat, Kami mengundang Bpk/Ibu/Sdr/i pada acara pernikahan anak kami
+              </p>
+              <p className="text-[0.8rem]">
+                Mohon maaf apabila ada kesalahan penulisan nama/gelar
               </p>
               <RevealWrapper duration={4000} origin="bottom">
                 <button

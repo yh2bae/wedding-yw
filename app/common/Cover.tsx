@@ -73,7 +73,7 @@ const Cover: React.FC<CoverProps> = ({ onClick }) => {
             <div className="flex flex-col items-center gap-2">
               <p className="text-[0.8rem]">Kepada Yth.</p>
               <br />{" "}
-              <h4 className="font-light text-4xl capitalize">{toName}</h4>
+              <h4 className="font-light text-2xl capitalize">{toName}</h4>
               {/* <p className="text-[0.8rem]">
                 Tanpa Mengurangi Rasa Hormat, Kami Mengundang Bpk/Ibu/Sdr/i Untuk
                 Menghadiri Di Acara Pernikahan Kami.

@@ -4,6 +4,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { HiArrowLongRight } from "react-icons/hi2";
 
 const Profile = () => {
+  const url = window.location.href.split("/")[3];
   return (
     <section id="people">
       <div className="bg-[url('/images/profile.webp')] bg-center bg-no-repeat bg-cover px-12 py-16 text-gray-900">
@@ -13,7 +14,8 @@ const Profile = () => {
             <br />
             Assalamu'alaikum Warahmatullaahi Wabarakaatuh. Dengan memohon Rahmat
             dan Ridho Allah SWT. Kami mengharapkan kehadiran
-            Bapak/Ibu/Saudara/i. pada acara Resepsi Pernikahan anak kami
+            Bapak/Ibu/Saudara/i. pada acara Resepsi Pernikahan {url !== "#" && ('anak')} kami
+            
           </p>
         </RevealWrapper>
 
@@ -37,7 +39,7 @@ const Profile = () => {
         <div className="flex flex-col items-end text-right gap-6 mt-5">
           <RevealWrapper duration={1500} origin="bottom">
             <h1 className="italic text-2xl font-light">
-              Siti Wulandari, S.Kom
+              Siti Wulandari, S.Kom.
             </h1>
           </RevealWrapper>
           <p className="text-sm leading-relaxed">
@@ -76,7 +78,7 @@ const Profile = () => {
         <div className="flex flex-col items-start text-left gap-6 mt-5">
           <RevealWrapper duration={1500} origin="bottom">
             <h1 className="italic text-2xl font-light">
-              Subroto Yudha Harsanto, S.Kom., MCF
+              Subroto Yudha Harsanto, S.Kom., MCF.
             </h1>
           </RevealWrapper>
           <p className="text-sm leading-relaxed">

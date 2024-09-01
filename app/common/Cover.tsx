@@ -67,7 +67,7 @@ const Cover: React.FC<CoverProps> = ({ onClick }) => {
               <p className="font-extralight text-[0.75rem]">The Wedding of</p>
               <h1 className="text-4xl font-light mt-2">Yudha & Wulan</h1>
               <p className="font-extralight text-[0.8rem] mt-4">
-                Wednesday, 11 September 2024
+                Wednesday, 12 September 2024
               </p>
             </div>
             <div className="flex flex-col items-center gap-2">
